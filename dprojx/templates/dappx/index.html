@@ -1,0 +1,14 @@
+{% extends "dappx/base.html" %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Welcome to the Djungle !</h1>
+    {% if user.is_authenticated %}
+        <h2>Hello {{ user.username }}</h2>
+        <h2><a href="{% url 'health_check_home' %}"> Plese click Here for System Health Checks</a></h2>	
+    {% else %}
+        <h2><a href="{% url 'dappx:register' %}">Register</a> or <a href="{% url 'dappx:user_login' %}">Login</a> if you'd like to</h2>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
