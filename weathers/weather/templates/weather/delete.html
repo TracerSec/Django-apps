@@ -1,0 +1,6 @@
+{% extends 'index.html' %}
+{% block content %}
+<a href="{% url 'delete_city city_weather.city' %}">
+    <button class="delete"></button>
+</a>
+{% endblock %}
