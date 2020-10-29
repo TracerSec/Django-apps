@@ -1,2 +1,2 @@
-<h1> This Repo contains all Django projects</h1>
+<h1> Django projects</h1>
 
